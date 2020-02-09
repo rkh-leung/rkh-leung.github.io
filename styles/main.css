@@ -1,0 +1,10 @@
+.container {
+    display: grid;
+    font-family: 'Open Sans', sans-serif;
+    background-color: brown;
+    color: blueviolet;
+}
+
+h1 {
+    color: red;
+}
