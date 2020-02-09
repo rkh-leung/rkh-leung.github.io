@@ -3,6 +3,7 @@
     font-family: 'Open Sans', sans-serif;
     margin: 2em;
     height: 100%;
+    grid-template-columns: repeat(12, minmax(100px, 1fr));
     grid-template-areas: "m h h h h h h h h h h h" "m c c c c c c c c c c c" "m f f f f f f f f f f f";
 }
 
@@ -16,4 +17,9 @@
 
 .menu {
     grid-area: m;
+}
+
+.button {
+    margin: 2em;
+    padding: 1em;
 }
