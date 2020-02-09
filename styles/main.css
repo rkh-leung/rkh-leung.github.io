@@ -1,10 +1,19 @@
 .container {
     display: grid;
     font-family: 'Open Sans', sans-serif;
-    background-color: brown;
-    color: blueviolet;
+    margin: 2em;
+    height: 100%;
+    grid-template-areas: "m h h h h h h h h h h h" "m c c c c c c c c c c c" "m f f f f f f f f f f f";
 }
 
-h1 {
-    color: red;
+.header {
+    grid-area: h;
+}
+
+.content {
+    grid-area: c;
+}
+
+.menu {
+    grid-area: m;
 }
