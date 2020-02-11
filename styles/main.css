@@ -4,23 +4,30 @@
     margin: 2em;
     height: 100%;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-areas: "s h h h h h h h h h h h" "s c c c c c c c c c c c" "s f f f f f f f f f f f";
+    grid-template-areas: "s s h h h h h h h h h h" "s s c c c c c c c c c c" "s s f f f f f f f f f f";
 }
 
 .header {
     grid-area: h;
-    margin-left: 60px;
 }
 
 .content {
     grid-area: c;
-    margin-left: 60px;
+}
+
+.nestedcontent {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .responsive {
     width: 100%;
     height: auto;
 }
+
+
+/* Sidebar Navigation */
 
 .sidenav {
     grid-area: s;
@@ -34,20 +41,48 @@
     background-color: #111111;
 }
 
-.sidenav a {
+
+/* Sidebar links format */
+
+.sidenav a,
+.dropbtn {
     display: block;
     font-size: large;
     color: yellow;
     padding: 1em;
     text-decoration: none;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
 }
 
-.sidenav a:hover {
+.sidenav a:hover,
+.dropbtn:hover {
     background-color: #555;
     color: white;
 }
 
-.button {
-    margin: 2em;
-    padding: 1em;
+.card {
+    border: #111111;
+    border: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }

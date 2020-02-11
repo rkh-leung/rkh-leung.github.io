@@ -13,25 +13,40 @@
     <header class="header">
         <h1>Dev Academy blog</h1>
     </header>
+    <nav class="sidenav">
+        <a href="/index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Culture</button>
+            <div class="dropdown-content">
+                <a href="/blog/sprint1-cultural.html">Sprint1</a>
+                <a href="/blog/sprint2-cultural.html">Sprint2</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Technical</button>
+            <div class="dropdown-content">
+
+                <a href="/blog/sprint1-technical.html">Sprint1</a>
+                <a href="/blog/sprint2-technical.html">Sprint2</a>
+            </div>
+        </div>
+    </nav>
     <section class="content">
         <p>
             Welcome to my blog! This blog will document my journey through Enspiral Dev Academy's foundations course.
         </p>
-        <card>
-            <a href="/blog/sprint1-cultural.html">Identity, Values, and Strenths and Strengths Explorations</a>
-        </card><br>
-        <card>
-            <a href="/blog/sprint2-cultural.html">Learning Reflections</a>
-        </card><br>
-        <card>
-            <a href="/blog/sprint1-technical.html">Stories and legends</a>
-        </card><br>
-        <card>
-            <a href="/blog/sprint2-technical.html">Margin, border & ... padding?!</a>
-        </card><br>
-    </section>
-    <section class="sidenav">
-        <a class="active" href="index.html">Home</a>
+        <div class="nestedcontent">
+            <card class="card">
+                <h3>Culture</h3>
+                <a href="/blog/sprint1-cultural.html">Identity, Values, and Strenths and Strengths Explorations</a><br>
+                <a href="/blog/sprint2-cultural.html">Learning Reflections</a>
+            </card>
+            <card class="card">
+                <h3>Technical</h3>
+                <a href="/blog/sprint1-technical.html">Stories and legends</a><br>
+                <a href="/blog/sprint2-technical.html">Margin, border & ... padding?!</a>
+            </card><br>
+        </div>
     </section>
 </body>
 
