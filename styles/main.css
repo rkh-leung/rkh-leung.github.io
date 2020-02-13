@@ -63,6 +63,10 @@ article {
     text-align: center;
 }
 
+.card>ul {
+    text-align: left;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -84,6 +88,7 @@ article {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: "s" "h" "c";
+        grid-template-rows: 65px 100px;
     }
     .nestedcontent {
         display: grid;
