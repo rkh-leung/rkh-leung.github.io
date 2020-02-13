@@ -10,53 +10,67 @@
 </head>
 
 
-<body class="container">
-    <header class="header">
-        <h1>
-            What are the best practices associated with using classes vs. ids?
-        </h1>
-        <h4>11 November 2020</h4>
-    </header>
-    <nav class="sidenav">
-        <a href="/index.html">Home</a>
-        <div class="dropdown">
-            <button class="dropbtn">Culture</button>
-            <div class="dropdown-content">
-                <a href="/blog/sprint1-cultural.html">Sprint1</a>
-                <a href="/blog/sprint2-cultural.html">Sprint2</a>
+<body>
+    <article>
+        <header class="header">
+            <h1>
+                What is the difference between Margin, Border, and Padding?
+            </h1>
+            <hr>
+        </header>
+        <nav class="sidenav">
+            <a href="/index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Culture</button>
+                <div class="dropdown-content">
+                    <a href="/blog/sprint1-cultural.html">Sprint1</a>
+                    <a href="/blog/sprint2-cultural.html">Sprint2</a>
+                    <a href="/blog/sprint3-cultural.html">Sprint3</a>
+                    <a href="/blog/sprint4-cultural.html">Sprint4</a>
+                    <a href="/blog/sprint5-cultural.html">Sprint5</a>
+                </div>
             </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">Technical</button>
-            <div class="dropdown-content">
+            <div class="dropdown">
+                <button class="dropbtn">Technical</button>
+                <div class="dropdown-content">
+                    <a href="/blog/sprint1-technical.html">Sprint1</a>
+                    <a href="/blog/sprint2-technical.html">Sprint2</a>
+                    <a href="/blog/sprint3-technical.html">Sprint3</a>
+                    <a href="/blog/sprint4-technical.html">Sprint4</a>
+                    <a href="/blog/sprint5-technical.html">Sprint5</a>
+                </div>
+            </div>
+        </nav>
+        <section class="content">
+            <h4>11 November 2020</h4>
 
-                <a href="/blog/sprint1-technical.html">Sprint1</a>
-                <a href="/blog/sprint2-technical.html">Sprint2</a>
-            </div>
-        </div>
-    </nav>
-    <section class="content">
-        <p>
-            The web browser engine displays HTML content as rectangular box (also known as the CSS model). That box can be divided into four parts: margin, border, padding and content and are defined by their respective edges.
-        </p><br>
-        <img class="responsive" src="https://media.prod.mdn.mozit.cloud/attachments/2014/09/29/8685/0930aa361239ef7b22a8da798410a855/boxmodel-(3).png" alt="MDN web docs"><br>
-        <cite>Source: MDN web docs</cite><br>
-        <p>
-            The <strong>content area</strong>, defined by content edges (content height and width) contains the actual content of HTML element, such as text, image or video.
-        </p>
-        <p>
-            The <strong> padding area</strong> extends the content area to include its padding. Padding is a transparent area, or white space that surrounds the content area.
-        </p>
-        <p>
-            The <strong>border area</strong> extends the padding area to include its border. Border is a line that wraps around the padding area.
-        </p>
-        <p>
-            The <strong>margin</strong> extends the border to include its margin. Margin is an empty area used to separate the element from its neighbors.
-        </p>
-        <p>
-            The biggest difference between margin and padding is that vertical margin can be collapsed (two elements have vertical margins merged into one another) while padding doesn’t.
-        </p>
-    </section>
+            <p>
+                The web browser engine displays HTML content as rectangular box (also known as the CSS model). That box can be divided into four parts: margin, border, padding and content and are defined by their respective edges.
+            </p><br>
+            <img class="responsive" src="https://media.prod.mdn.mozit.cloud/attachments/2014/09/29/8685/0930aa361239ef7b22a8da798410a855/boxmodel-(3).png" alt="MDN web docs"><br>
+            <cite>Source: MDN web docs</cite><br>
+            <p>
+                The <strong>content area</strong>, defined by content edges (content height and width) contains the actual content of HTML element, such as text, image or video.
+            </p>
+            <p>
+                The <strong> padding area</strong> extends the content area to include its padding. Padding is a transparent area, or white space that surrounds the content area.
+            </p>
+            <p>
+                The <strong>border area</strong> extends the padding area to include its border. Border is a line that wraps around the padding area.
+            </p>
+            <p>
+                The <strong>margin</strong> extends the border to include its margin. Margin is an empty area used to separate the element from its neighbors.
+            </p>
+            <p>
+                The general rule of thumb of when to use padding or margin is:
+                <ul>
+                    <li>If you need more background, use padding.</li>
+                    <li>If you need more white space, use margin.</li>
+                </ul>
+            </p>
+            <p>Lastly, be wary of margin collapse! It is where two elements have vertical margins merged into one another.</p>
+        </section>
+    </article>
 
 </body>
 

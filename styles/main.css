@@ -1,10 +1,11 @@
-.container {
+article {
     display: grid;
     font-family: 'Open Sans', sans-serif;
-    margin: 2em;
-    height: 100%;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-areas: "s s h h h h h h h h h h" "s s c c c c c c c c c c" "s s f f f f f f f f f f";
+    height: 100vh;
+    grid-gap: 10px;
+    grid-template-columns: 110px 1fr 1fr;
+    grid-template-rows: 60px 1fr 1fr;
+    grid-template-areas: "s h h" "s c c" "s c c";
 }
 
 .header {
@@ -13,6 +14,11 @@
 
 .content {
     grid-area: c;
+}
+
+.sidenav {
+    grid-area: s;
+    background-color: #111111;
 }
 
 .nestedcontent {
@@ -24,21 +30,6 @@
 .responsive {
     width: 100%;
     height: auto;
-}
-
-
-/* Sidebar Navigation */
-
-.sidenav {
-    grid-area: s;
-    height: 100%;
-    width: 100px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    background-color: #111111;
 }
 
 
@@ -85,4 +76,17 @@
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    article {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "s" "h" "c";
+    }
+    .nestedcontent {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 1fr;
+    }
 }
