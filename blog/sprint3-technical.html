@@ -4,11 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML, CSS & JavaScript basics</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/main.css">
 </head>
 
 <body>
+    <article>
+        <header class="header">
+            <h1>
+                HTML, CSS & JavaScript basics
+            </h1>
+            <hr>
+        </header>
+        <nav class="sidenav">
+            <a href="/index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Culture</button>
+                <div class="dropdown-content">
+                    <a href="/blog/sprint1-cultural.html">Sprint1</a>
+                    <a href="/blog/sprint2-cultural.html">Sprint2</a>
+                    <a href="/blog/sprint3-cultural.html">Sprint3</a>
+                    <a href="/blog/sprint4-cultural.html">Sprint4</a>
+                    <a href="/blog/sprint5-cultural.html">Sprint5</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Technical</button>
+                <div class="dropdown-content">
+                    <a href="/blog/sprint1-technical.html">Sprint1</a>
+                    <a href="/blog/sprint2-technical.html">Sprint2</a>
+                    <a href="/blog/sprint3-technical.html">Sprint3</a>
+                    <a href="/blog/sprint4-technical.html">Sprint4</a>
+                    <a href="/blog/sprint5-technical.html">Sprint5</a>
+                </div>
+            </div>
+        </nav>
+        <section class="content">
+            <h4>13 February, 2020</h4>
+            <br>
+            <h2>An analogy to describe the differences between HTML and CSS</h2>
+            <div class="nestedcontent">
+                <div>
+                    <p>
+                        The structure of a website is just like any living beings! It has a skeletal structure, flesh and a central nervous system, a.k.a. the brain.
+                    </p>
+                    <p>
+                        Skeletal structure allows us to differentiate between different animals, say a dog from a cat. It is the fundamental characteristic that allows us to classify different species. Makeup language is the basic foundation that make up a website, while HTML
+                        is the main markup language used to build a website, do keep in mind that it is not the only markup language in existence.
+                    </p>
+                    <p>
+                        Flesh is just like CSS; it beautifies the basic skeletal structure and brings it to life. CSS gives additional characteristics to a website, it has control over the entire design of a website from color scheme to font style to item placements, etc…
+                    </p>
+                    <p>
+                        Lastly the brain connects both skeletal structure and flesh together to form cute furballs that we know and love.
+                    </p>
+                </div>
+                <img src="http://place-puppy.com/500x400" alt="puppies from place-puppy.com">
+            </div>
 
+            <h2>Explain control flow and loops using an example process from everyday life, for example 'waking up' or 'brushing your teeth'. (But not those ones).</h2>
+            <img src="/Assets/control-flow-chart.png" alt="Control flow chart deciding cook or order out">
+            <img src="/Assets/basic-loop-chart.png" alt="loop chart for studying">
+            <h2>Describe what the DOM is and an example of how you might interact with it.</h2>
+            <p>
+                DOM stands for Document Object Model, it is a cross-platform standard for representing and interacting with objects in HTML, XHTML and XML documents.
+            </p>
+            <p>
+                Although JavaScript is one of the most popular languages for manipulating DOM, DOM implementation can be built for any language.
+            </p>
+            <p>
+                An example of JavaScript interacting with DOM is using <code>getElementsByClassName()</code> method. Thiw will return all objects with the same class identifier within a document, in this case, the title of the document
+            </p>
+            <figure>
+                <img class="responsive" src="/Assets/Sprint3c-example.png" alt="Picture of command getElementsByClassName">
+                <figcaption>Console output of getElementsByClassName method</figcaption>
+            </figure>
+            <h2>Explain the difference between accessing data from arrays and objects.</h2>
+            <p>
+                An array is a variable that stores a collection of items. It creates an ordered collections where items can be accessed by their numerical position in the list.
+            </p>
+            <p>
+                An object is a variable that stores a collection of key-value pairs. The value of an object can be accessed by the key that's paired with the value.
+            </p>
+            <h2>Explain what functions are and why they are useful.</h2>
+            <p>
+                A function is a piece of code that performs a specific task.
+            </p>
+            <p>
+                It is useful because you can combine multiple functions to perform complex tasks, or use control flow statements to perform repetitive tasks.
+            </p>
+        </section>
+    </article>
 </body>
 
 </html>
