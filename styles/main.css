@@ -3,7 +3,7 @@ article {
     font-family: 'Open Sans', sans-serif;
     height: 100vh;
     grid-gap: 10px;
-    grid-template-columns: 110px 1fr 1fr;
+    grid-template-columns: 150px 1fr 1fr;
     grid-template-rows: 60px 1fr 1fr;
     grid-template-areas: "s h h" "s c c" "s c c";
 }
