@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1">
+    <title>JAVASCRIPT CARNIVAL: Whack-a-Mole!</title>
+    <link href="https://fonts.googleapis.com/css?family=Rye&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="preload" href="whack-audio.wav" as="audio" type="audio/wav">
+    <script src="whack-a-mole.js" defer></script>
+
+</head>
+
+<body onload="delayStart()">
+
+    <h1> JAVASCRIPT CARNIVAL: Whack-a-Mole! </h1>
+
+    <div>
+        <p id="timer"></p>
+        <p id="counter"></p>
+    </div>
+    <br>
+    <div>
+        <button onclick="restartGame()">Restart</button>
+    </div>
+    <br>
+    <table id="gameBoard">
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
