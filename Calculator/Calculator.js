@@ -11,9 +11,14 @@ function calculateHandler(event) {
   if (!isNaN(val) || val === '.') {
     temp += val;
     ans.innerHTML = temp.substring(0, 10);
-  } else if (val === 'CE') {
+  } else if (val === 'AC') {
+    entries = [];
     temp = '';
-    ans.value('');
+    total = 0;
+    ans.innerHTML = 0;
+  } else if (val === 'CE') {
+    temp = 0;
+    $("#answer").val('');
   } else if (val === 'x') {
     entries.push(temp);
     entries.push('*');
