@@ -1,24 +1,24 @@
 let entries = [];
 let total = 0;
-let temp = '';
+let temp = 0;
+let previousAnswer = 0;
 const btn = document.querySelector('section');
 const ans = document.getElementById('input');
 btn.addEventListener('click', calculateHandler);
 
 function calculateHandler(event) {
   let val = event.target.value;
-  // console.log(val);
   if (!isNaN(val) || val === '.') {
     temp += val;
-    ans.innerHTML = temp.substring(0, 10);
+    ans.innerHTML = temp;
   } else if (val === 'AC') {
     entries = [];
-    temp = '';
+    temp = 0;
     total = 0;
     ans.innerHTML = 0;
   } else if (val === 'CE') {
     temp = 0;
-    $("#answer").val('');
+    ans.innerHTML = 0;
   } else if (val === 'x') {
     entries.push(temp);
     entries.push('*');
